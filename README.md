@@ -1,4 +1,15 @@
-# Setup for Login Screen
+# Ubuntu Setup
+
+A brief documentation on how I set up my Ubuntu install to satisfy my needs (in terms of design and workflow).
+
+## Table of contents
+
+- [Login Screen Setup](#login-screen-setup)
+  - [Monitor Setup](#monitor-setup)
+  - [Background Image](#background-image)
+  - [Mouse Cursor Theme & Speed](#mouse-cursor-theme--speed)
+
+# Login Screen Setup
 
 ## Monitor Setup
 
