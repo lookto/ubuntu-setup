@@ -1,4 +1,4 @@
-# Ubuntu 22.04 Setup
+# **Ubuntu 22.04 Setup**
 
 A brief documentation on how I set up my Ubuntu install to satisfy my needs (in terms of design and workflow).
 
@@ -27,9 +27,9 @@ A brief documentation on how I set up my Ubuntu install to satisfy my needs (in 
   - [Background Image](#background-image)
   - [Mouse Cursor Theme & Speed](#mouse-cursor-theme--speed)
 
-# Themes
+# **Themes**
 
-## Shell Theme
+## **Shell Theme**
 
 [Colloid-gtk-theme by vinceliuce](https://github.com/vinceliuice/Colloid-gtk-theme) _(using the dark theme with nord tweaks)_
 
@@ -39,7 +39,7 @@ Download/clone the repository and run the install script.
 sudo ./install.sh -d /usr/share/themes -c dark --tweaks nord
 ```
 
-## Cursor Theme
+## **Cursor Theme**
 
 [oreo-cursors by varlesh](https://github.com/varlesh/oreo-cursors) _(using the 'original white' version)_
 
@@ -49,7 +49,7 @@ Download the build version (link in the repository readme) and copy the folder t
 sudo cp -r /example/path/ /usr/share/icons/
 ```
 
-## Icons Theme
+## **Icons Theme**
 
 [Colloid-icon-theme by vinceliuce](https://github.com/vinceliuice/Colloid-icon-theme)
 
@@ -61,9 +61,9 @@ sudo ./install.sh -d /usr/share/icons -s nord
 
 The generated dark icon theme is a little buggy. To fix it run the install script a second time.
 
-# Software
+# **Software**
 
-## Tweaks
+## **Tweaks**
 
 Used to set themes, fonts and other little tweaks.
 
@@ -75,7 +75,7 @@ sudo add-apt-repository universe
 sudo apt install gnome-tweak-tool
 ```
 
-## Extension Manager
+## **Extension Manager**
 
 Used to install and manage gnome shell extensions.
 
@@ -83,7 +83,7 @@ Used to install and manage gnome shell extensions.
 sudo apt install gnome-shell-extension-manager
 ```
 
-### Extensions
+### **Extensions to install**
 
 Install through Extension Manager
 
@@ -115,7 +115,7 @@ Adds a refresh button to the wifi connector.
 
 Enables [Tweaks](#tweaks) to customize shell themes.
 
-## Gnome Pomodoro
+## **Gnome Pomodoro**
 
 Neat little pomodoro timer that integrates well with gnome shell.
 
@@ -123,7 +123,7 @@ Neat little pomodoro timer that integrates well with gnome shell.
 sudo apt-get install gnome-shell-pomodoro
 ```
 
-## PulseAudio Volume Control
+## **PulseAudio Volume Control**
 
 Advanced audio settings with gui.
 
@@ -131,7 +131,7 @@ Advanced audio settings with gui.
 sudo apt-get install pavucontrol
 ```
 
-## dconf Editor
+## **dconf Editor**
 
 Allows to directly edit the entire configuration database. Usefull for settings, keyboard shortcuts etc.
 
@@ -139,7 +139,7 @@ Allows to directly edit the entire configuration database. Usefull for settings,
 sudo apt-get install dconf-editor
 ```
 
-## Firefox
+## **Firefox**
 
 The firefox version that can be installed using snap is a little buggy if it comes to mouse theme. So we have to install it by repository (for now).
 
@@ -167,9 +167,9 @@ echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codenam
 sudo apt install firefox
 ```
 
-# Login Screen Setup
+# **Login Screen Setup**
 
-## Monitor Setup
+## **Monitor Setup**
 
 Copies the monitor setup of the active session to be used by gdm.
 (So you first have to configure the monitors the correct way through GUI in your session)
@@ -178,7 +178,7 @@ Copies the monitor setup of the active session to be used by gdm.
 sudo cp ~/.config/monitors.xml /var/lib/gdm3/.config
 ```
 
-## Background Image
+## **Background Image**
 
 We can set the background image of the login screen with a little help of a [script](https://github.com/PRATAP-KUMAR/ubuntu-gdm-set-background) written by [Pratap Panabaka](https://github.com/PRATAP-KUMAR).
 
@@ -198,7 +198,7 @@ sudo ./ubuntu-gdm-set-background --help
 
 to gather more information on that.
 
-## Mouse Cursor Theme & Speed
+## **Mouse Cursor Theme & Speed**
 
 Edit the gdm3 greeter config to adjust the mouse cursor theme and speed.
 The theme has to be located at `/usr/share/icons/`.
