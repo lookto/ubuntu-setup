@@ -4,10 +4,48 @@ A brief documentation on how I set up my Ubuntu install to satisfy my needs (in 
 
 ## Table of contents
 
+- [Themes](#themes)
+  - [Shell Theme](#shell-theme)
+  - [Cursor Theme](#cursor-theme)
+  - [Icons Theme](#icons-theme)
 - [Login Screen Setup](#login-screen-setup)
   - [Monitor Setup](#monitor-setup)
   - [Background Image](#background-image)
   - [Mouse Cursor Theme & Speed](#mouse-cursor-theme--speed)
+
+# Themes
+
+## Shell Theme
+
+[Colloid-gtk-theme by vinceliuce](https://github.com/vinceliuice/Colloid-gtk-theme) _(using the dark theme with nord tweaks)_
+
+Download/clone the repository and run the install script.
+
+```bash
+sudo ./install.sh -d /usr/share/themes -c dark --tweaks nord
+```
+
+## Cursor Theme
+
+[oreo-cursors by varlesh](https://github.com/varlesh/oreo-cursors) _(using the 'original white' version)_
+
+Download the build version (link in the repository readme) and copy the folder to `/usr/share/icons/`.
+
+```bash
+sudo cp -r /example/path/ /usr/share/icons/
+```
+
+## Icons Theme
+
+[Colloid-icon-theme by vinceliuce](https://github.com/vinceliuice/Colloid-icon-theme)
+
+Download/clone the repository and run the install script.
+
+```bash
+sudo ./install.sh -d /usr/share/icons -s nord
+```
+
+The generated dark icon theme is a little buggy. To fix it run the install script a second time.
 
 # Login Screen Setup
 
